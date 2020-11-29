@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>785</width>
+    <height>638</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Select Center</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>51</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>81</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter Radius</string>
+    </property>
+    <property name="buddy">
+     <cstring>lineEdit_3</cstring>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Draw Circle</string>
+    </property>
+   </widget>
+   <widget class="Viewer" name="drawingScene" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>731</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>CrossCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#73d216;&quot;&gt;Панель отрисовки OpenGL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <widget class="QLabel" name="Coord_Label">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>510</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QScrollBar" name="horizontalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>610</y>
+      <width>731</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>200</number>
+    </property>
+    <property name="singleStep">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="verticalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>50</y>
+      <width>16</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>200</number>
+    </property>
+    <property name="singleStep">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>10</y>
+      <width>311</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Поле ввода параметров отрисовки окружности.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;&lt;span style=&quot; font-weight:600;&quot;&gt;Параметр 1&lt;/span&gt;&amp;gt;, &amp;lt;&lt;span style=&quot; font-weight:600;&quot;&gt;Параметр 2&lt;/span&gt;&amp;gt;, ...,&amp;lt;&lt;span style=&quot; font-weight:600;&quot;&gt;Параметр n&lt;/span&gt;&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Примечание:&lt;/span&gt; Параметры перечисляются через запятую без пробелов&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Возможные варианты параметров отрисовки:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;* First_quarter&lt;/span&gt; - отрисовать &lt;span style=&quot; font-weight:600;&quot;&gt;I&lt;/span&gt; четверть окружности;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;* Second_quarter&lt;/span&gt; - отрисовать &lt;span style=&quot; font-weight:600;&quot;&gt;II&lt;/span&gt; четверть окружности;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;* Third_quarter&lt;/span&gt; - отрисовать &lt;span style=&quot; font-weight:600;&quot;&gt;III&lt;/span&gt; четверть окружности;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;* Fourth_quarter&lt;/span&gt; - отрисовать &lt;span style=&quot; font-weight:600;&quot;&gt;IV&lt;/span&gt; четверть окружности;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;* First_half&lt;/span&gt; - отрисовать &lt;span style=&quot; font-weight:600;&quot;&gt;I&lt;/span&gt; половину окржности (включает &lt;span style=&quot; font-weight:600;&quot;&gt;I&lt;/span&gt; и &lt;span style=&quot; font-weight:600;&quot;&gt;II&lt;/span&gt; четверти);&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;* Second_half&lt;/span&gt; - отрисовать &lt;span style=&quot; font-weight:600;&quot;&gt;II&lt;/span&gt; половину окржности (включает &lt;span style=&quot; font-weight:600;&quot;&gt;III&lt;/span&gt; и &lt;span style=&quot; font-weight:600;&quot;&gt;IV&lt;/span&gt; четверти);&lt;/p&gt;&lt;p&gt;* &lt;span style=&quot; font-weight:600;&quot;&gt;Full_circle &lt;/span&gt;- отрисовать окружность целиком (&lt;span style=&quot; font-weight:600;&quot;&gt;I&lt;/span&gt;,&lt;span style=&quot; font-weight:600;&quot;&gt; II&lt;/span&gt;,&lt;span style=&quot; font-weight:600;&quot;&gt; III &lt;/span&gt;и&lt;span style=&quot; font-weight:600;&quot;&gt; IV &lt;/span&gt;четверти).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Viewer</class>
+   <extends>QWidget</extends>
+   <header location="global">viewer.hpp</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
